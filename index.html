@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nothing Home</title>
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+        /* Importiere die Schriftart aus dem Unterordner "fonts" */
+        @font-face {
+            font-family: "Nothing Font (5x7) Regular";
+            src: url("fonts/nothing-font.ttf") format("truetype");
+        }
+    </style>
+    <link href="./assets/style/styles.css" rel="stylesheet" />
+
+</head>
+<body>
+    <button class="navbar-burger" onclick="toggleMenu()"></button>
+    <div class="menu">
+        <nav>
+            <a onclick="location.reload()" style="animation-delay: 0.1s">Reload Config</a>
+            <a href="https://github.com/arigata9" style="animation-delay: 0.2s">GitHub</a>
+            <a href="#" style="animation-delay: 0.3s">FIDO2 Settings</a>
+            <a href="#" style="animation-delay: 0.5s">Logout</a>
+        </nav>
+    </div>
+
+    <!-- Begrüßung -->
+    <div class="greeting">
+        <div id="greetings"></div>
+    </div>
+
+    <!-- Uhrzeit -->
+    <div class="clock">
+        <span id="hour"></span><br><span id="separator"></span><br><span id="minutes"></span>
+    </div>
+    <div class="container" id="buttons1">
+        <!-- Widgets will be generated here -->
+    </div>
+
+    <!-- Config  -->
+    <script src="config.js"></script>
+    <!-- Button generator  -->
+    <script src="./assets/js/buttons.js"></script>
+    <!-- Clock Script  -->
+    <script src="./assets/js/clock.js"></script>
+    <!-- Greeting Script  -->
+    <script src="./assets/js/greeting.js"></script>
+
+    <script type="text/javascript">
+        const toggleMenu = () => {
+            document.body.classList.toggle("open");
+        };
+    </script>
+
+</body>
+</html>
