@@ -8,11 +8,11 @@ const today = new Date();
     const gree4 = `${CONFIG.greetingEvening}\xa0`;
 
     if (hour >= 23 || hour < 6) {
-        document.getElementById('greetings').innerText = gree1 + name;
+        document.getElementById('greetings').innerHTML = gree1 + "<br>" + name;
     } else if (hour >= 6 && hour < 12) {
-        document.getElementById('greetings').innerText = gree2 + name;
+        document.getElementById('greetings').innerHTML = gree2 + "<br>" + name;
     } else if (hour >= 12 && hour < 17) {
-        document.getElementById('greetings').innerText = gree3 + name;
+        document.getElementById('greetings').innerHTML = gree3 + "<br>" + name;
     } else {
-        document.getElementById('greetings').innerText = gree4 + name;
+        document.getElementById('greetings').innerHTML = gree4 + "<br>" + name;
 }
