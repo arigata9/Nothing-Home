@@ -30,8 +30,9 @@ a:visited {
 .widget {
     background-color: #292c31;
     color: inherit;
-    text-align: center;
     font-size: 17px;
+    font-family: "Space Mono";
+    text-transform: initial;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.1), inset 0 1px 1px rgba(255, 255, 255, 0.1);
     display: flex;
@@ -40,11 +41,15 @@ a:visited {
     position: relative;
     padding: 20px;
 }
-
-.widget-icon {
+.widget i {
     font-size: 18px;
-    margin-right: 10px;
+    margin-right: 15px;
 }
+.widget span {
+    text-align: center;
+    width: 100%;
+}
+
 .widget:hover {
     transform: translateY(-0.2rem);
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.35);
