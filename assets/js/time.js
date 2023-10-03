@@ -1,8 +1,7 @@
-window.onload = displayTimeDate;
+window.onload = displayTimeDate();
 
 function displayTimeDate() {
     const monthNames = ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'];
-
 
     var d = new Date();
     var mm = monthNames[d.getMonth()];
@@ -14,8 +13,9 @@ function displayTimeDate() {
     document.getElementById('hour').innerText = hh;
     document.getElementById('separator').innerHTML = '- -';
     document.getElementById('minutes').innerText = min;
+    
     document.getElementById('day').innerText = dd;
-    document.getElementById('month').innerHTML = mm;
+    document.getElementById('month').innerText = mm;
 
-    setTimeout(displayClock, 5000);
+    setTimeout(displayTimeDate, 5000);
 }
