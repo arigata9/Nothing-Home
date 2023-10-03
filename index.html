@@ -31,15 +31,24 @@
         </nav>
     </div>
 
-    <!-- Begrüßung -->
-    <div class="greeting">
-        <div id="greetings"></div>
+    <div class="heading-widget">
+        <!-- Uhrzeit -->
+        <div class="clock">
+            <span id="hour"></span><br><span id="separator"></span><br><span id="minutes"></span>
+        </div>
+        
+        <div class="greeting-stack">
+            <!-- Begrüßung -->
+            <div class="greeting">
+                <div id="greetings"></div>
+            </div>
+            <!-- Tag -->
+            <div class="date">
+                <span id="day"></span> <span id="month"></span>
+            </div>
+        </div>
     </div>
 
-    <!-- Uhrzeit -->
-    <div class="clock">
-        <span id="hour"></span><br><span id="separator"></span><br><span id="minutes"></span>
-    </div>
     <div class="container" id="buttons1">
         <!-- Widgets will be generated here -->
     </div>
@@ -48,9 +57,9 @@
     <script src="config.js"></script>
     <!-- Button generator  -->
     <script src="./assets/js/buttons.js"></script>
-    <!-- Clock Script  -->
-    <script src="./assets/js/clock.js"></script>
-    <!-- Greeting Script  -->
+    <!-- Clock and date script  -->
+    <script src="./assets/js/time.js"></script>
+    <!-- Greeting script  -->
     <script src="./assets/js/greeting.js"></script>
 
     <script type="text/javascript">
